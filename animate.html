@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery animate() Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="myDiv" style="width: 100px; height: 100px; background-color: #181717;"></div>
+  <button id="animateButton">Animate</button>
+  
+  <script>
+    $(document).ready(function() {
+      $("#animateButton").click(function() {
+        // Perform a custom animation using animate()
+        $("#myDiv").animate({
+          width: "200px",
+          height: "200px",
+          backgroundColor: "#ff0000"
+        }, 1000); // 1000 milliseconds (1 second) duration
+      });
+    });
+  </script>
+</body>
+</html>
