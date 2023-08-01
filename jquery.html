@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery fadeIn() and fadeOut() Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="myDiv" style="width: 200px; height: 100px; background-color: #f0f0f0; display: none;"></div>
+  <button id="fadeInButton">Fade In</button>
+  <button id="fadeOutButton">Fade Out</button>
+  
+  <script>
+    $(document).ready(function() {
+      $("#fadeInButton").click(function() {
+        $("#myDiv").slideUp();
+      });
+
+      $("#fadeOutButton").click(function() {
+        $("#myDiv").slideDown();
+      });
+    });
+  </script>
+</body>
+</html>
